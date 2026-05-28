@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+*/.DS_Store
+
+# Secrets et données locales
+.env
+.env.*
+storage/users.json
+
+# Logs, caches et fichiers temporaires
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+cache/
+
+# Dépendances générées
+vendor/
+node_modules/
+
+# Configuration éditeur/IDE locale
+.idea/
+.vscode/

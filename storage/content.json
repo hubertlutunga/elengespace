@@ -1,0 +1,107 @@
+{
+  "site": {
+    "hero_title": "la webradio qui amplifie la voix des jeunes.",
+    "hero_intro": "Culture, débats, musique urbaine, entrepreneuriat, tech, inspiration… Branche-toi sur Elenge Space et retrouve les voix qui construisent l’Afrique d’aujourd’hui.",
+    "hero_button_label": "▶ Lancer la radio en ligne",
+    "radio_stream_url": "https://elengespace-lbfdbroadcast.radioca.st/stream",
+    "contact_email": "elenge.space@gmail.com",
+    "contact_phone": "+243 853 658 131",
+    "contact_address": "Kinshasa, République Démocratique du Congo",
+    "contact_handle": "@ElengeSpace"
+  },
+  "featured_videos": [
+    {
+      "id": "vid_1",
+      "title": "Talk Jeunesse – Comment entreprendre à Kinshasa ?",
+      "meta": "Épisode 12 • 1h05 • Publié le 10 déc. 2025",
+      "type": "embed",
+      "embed_url": "https://www.youtube.com/embed/W_xhXN9Eh24",
+      "image": "",
+      "published": true,
+      "sort_order": 1
+    },
+    {
+      "id": "vid_2",
+      "title": "Urban Session – Spécial Rap & Afrotrap",
+      "meta": "Live DJ set • 58 min • Publié le 3 déc. 2025",
+      "type": "image",
+      "embed_url": "",
+      "image": "images/thumb-urban-session.jpg",
+      "published": true,
+      "sort_order": 2
+    },
+    {
+      "id": "vid_3",
+      "title": "Chronique Tech – L’IA au service de la culture",
+      "meta": "Magazine • 42 min • Publié le 28 nov. 2025",
+      "type": "image",
+      "embed_url": "",
+      "image": "images/thumb-chronique-tech.jpg",
+      "published": true,
+      "sort_order": 3
+    },
+    {
+      "id": "vid_4",
+      "title": "Femmes Inspirantes – Parcours d’une créatrice congolaise",
+      "meta": "Interview • 35 min • Publié le 20 nov. 2025",
+      "type": "image",
+      "embed_url": "",
+      "image": "images/thumb-femmes-inspirantes.jpg",
+      "published": true,
+      "sort_order": 4
+    }
+  ],
+  "podcasts": [
+    {
+      "id": "pod_1",
+      "tag": "Podcast",
+      "title": "La Minute Motivation – 5 minutes pour booster ta journée",
+      "meta": "Saison 2 • Épisode 05 • 05:34 • Audio & vidéo",
+      "published": true,
+      "sort_order": 1
+    },
+    {
+      "id": "pod_2",
+      "tag": "Replay vidéo",
+      "title": "Débat – Réseaux sociaux : chance ou piège pour la jeunesse ?",
+      "meta": "Émission spéciale • 1h22 • Disponible sur YouTube & Facebook",
+      "published": true,
+      "sort_order": 2
+    },
+    {
+      "id": "pod_3",
+      "tag": "Podcast",
+      "title": "Chroniques de Kin – Histoires de rues & de rêves",
+      "meta": "Nouveau tous les samedis • 30 min",
+      "published": true,
+      "sort_order": 3
+    }
+  ],
+  "news": {
+    "headline_title": "🎙️ Lancement officiel du studio vidéo Elenge Space",
+    "headline_body": "Un nouvel espace équipé pour produire des émissions en live streaming multi-caméras, ouvert aux jeunes créateurs, artistes, entrepreneurs et associations.",
+    "items": [
+      {
+        "id": "news_1",
+        "title": "Nouvelle grille de programmes – saison 2026",
+        "description": "Entrepreneuriat, culture urbaine, foi, humour… découvre les nouvelles émissions.",
+        "published": true,
+        "sort_order": 1
+      },
+      {
+        "id": "news_2",
+        "title": "Partenariat avec des écoles & universités",
+        "description": "Pour donner un micro aux étudiants et valoriser leurs projets.",
+        "published": true,
+        "sort_order": 2
+      },
+      {
+        "id": "news_3",
+        "title": "Casting animateurs & chroniqueurs",
+        "description": "Tu veux rejoindre l’équipe ? Envoie ton démo audio ou vidéo.",
+        "published": true,
+        "sort_order": 3
+      }
+    ]
+  }
+}
