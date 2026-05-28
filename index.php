@@ -35,6 +35,7 @@ if(!empty($page) && in_array($_GET['page'].".php",$pages)) {
    
  else{
   header("Location:index.php?page=accueil");
+    exit;
 }
 
 ?>
