@@ -27,12 +27,12 @@ $contactHandle = $site['contact_handle'] ?? '@ElengeSpace';
     </div>
 
     <!-- Bouton hamburger -->
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
       <span></span><span></span><span></span>
     </button>
 
     <!-- Menu -->
-    <nav class="nav-menu" id="navMenu">
+    <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
       <ul>
         <li><a href="#direct">En direct</a></li>
         <li><a href="#videos">Émissions vidéo</a></li>
@@ -45,6 +45,46 @@ $contactHandle = $site['contact_handle'] ?? '@ElengeSpace';
     </nav>
   </div>
 </header>
+
+<script>
+  (() => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (!navToggle || !navMenu) {
+      return;
+    }
+
+    const closeMenu = () => {
+      navToggle.classList.remove('is-open');
+      navMenu.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    };
+
+    const toggleMenu = () => {
+      const isOpen = navMenu.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('nav-open', isOpen);
+    };
+
+    navToggle.addEventListener('click', toggleMenu);
+    navMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+        closeMenu();
+      }
+    });
+  })();
+</script>
 
 
 
